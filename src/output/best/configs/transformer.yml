@@ -1,0 +1,9 @@
+architecture:
+  dropout: 0.0
+  hidden_dim: 1024
+  nhead: 4
+  nlayers: 8
+  num_channels: 2048
+  pos_dropout: 0.0
+  pos_max_len: 200
+config_name: transformer.yml

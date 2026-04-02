@@ -1,0 +1,6 @@
+architecture:
+  model_name: ResNet
+  variant: 50
+
+training:
+  pretrained: False

@@ -1,0 +1,8 @@
+architecture:
+  num_channels: 2048
+  hidden_dim: 1024
+  nhead: 4
+  nlayers: 8
+  dropout: 0.0
+  pos_dropout: 0.0
+  pos_max_len: 240

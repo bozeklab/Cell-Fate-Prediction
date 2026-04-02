@@ -1,0 +1,31 @@
+config_name: training.yml
+folder:
+  data_dir: src/data/dataset/
+  output_dir: src/output/
+  output_training: src/output/best/training
+misc:
+  mean:
+  - 2.1058e-07
+  - 4.0051e-07
+  - 2.8826e-07
+  std:
+  - 0.0221
+  - 0.0421
+  - 0.0303
+training:
+  augment: true
+  batch_size: 4
+  cls_token_at_end: false
+  early_stop_patience: 50
+  learning_rate: 1.0e-05
+  max_epochs: null
+  max_seq_length: null
+  min_seq_length: 10
+  num_workers: 14
+  pad_left: false
+  patch_size:
+  - 112
+  - 112
+  shuffle: true
+  truncation: null
+  weight_decay: 0.001

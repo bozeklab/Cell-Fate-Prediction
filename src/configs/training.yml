@@ -1,0 +1,18 @@
+folder:
+  data_dir: "src/data/dataset"
+  output_dir: "src/output/"
+
+training:
+  batch_size: 4
+  max_epochs: null
+  learning_rate: 0.00001
+  num_workers: 14
+  patch_size: [ 112, 112 ]
+  min_seq_length: 10
+  early_stop_patience: 50
+  weight_decay: 0.001
+  truncation: null
+
+misc:
+  mean: [ 2.1058e-07, 4.0051e-07, 2.8826e-07 ]
+  std: [ 0.0221, 0.0421, 0.0303 ]
