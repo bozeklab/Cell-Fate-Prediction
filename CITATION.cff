@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+title: "Understanding cell fate decisions with temporal attention"
+message: "If you use this software or the pretrained models, please cite the associated publication."
+type: software
+authors:
+  - family-names: Bürger
+    given-names: Florian
+repository-code: "https://github.com/bozeklab/Cell-Fate-Prediction"
+license: MIT
+preferred-citation:
+  type: article
+  title: "Understanding cell fate decisions with temporal attention"
+  authors:
+    - family-names: Bürger
+      given-names: Florian
+    - family-names: Dias Gomes
+      given-names: Martim
+    - family-names: Granada
+      given-names: Adrián E.
+    - family-names: Moreau
+      given-names: Noémie
+    - family-names: Bozek
+      given-names: Katarzyna
+  journal: "PLOS Computational Biology"
+  volume: 22
+  issue: 10
+  number: "e1014813"
+  year: 2026
+  month: 10
+  doi: "10.1371/journal.pcbi.1014813"
