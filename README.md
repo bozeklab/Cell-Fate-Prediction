@@ -190,9 +190,9 @@ Results are written to `src/data/analysis/statistics/<Death|Division>_<feature>.
 ## Citation
 
 ```bibtex
-@article{10.1371/journal.pcbi.1014813,
+@article{buerger2026cellfate,
     doi = {10.1371/journal.pcbi.1014813},
-    author = {Bürger, Florian AND Dias Gomes, Martim AND Granada, Adrián E. AND Moreau, Noémie AND Bozek, Katarzyna},
+    author = {Bürger, Florian and Dias Gomes, Martim and Granada, Adrián E. and Moreau, Noémie and Bozek, Katarzyna},
     journal = {PLOS Computational Biology},
     publisher = {Public Library of Science},
     title = {Understanding cell fate decisions with temporal attention},
@@ -211,7 +211,7 @@ The dataset is available on [PUBLISSO](https://repository.publisso.de/resource/f
 
 
 ```bibtex
-@misc{bürger2025transienttrackadvancedmultiobjecttracking,
+@misc{buerger2025transienttrack,
       title={TransientTrack: Advanced Multi-Object Tracking and Classification of Cancer Cells with Transient Fluorescent Signals}, 
       author={Florian Bürger and Martim Dias Gomes and Nica Gutu and Adrián E. Granada and Noémie Moreau and Katarzyna Bozek},
       year={2025},
