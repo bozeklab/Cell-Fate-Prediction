@@ -6,10 +6,7 @@ hyperparameter_search.sbatch
 write_hyperparams.py
 logs/
 src/data/sequences/
-src/output/**/*.ckpt
 src/data_csv/
-src/output_old/
-src/output_embeddings/
 src/training/checkpoints/
 src/training/*.pt
 wandb/
@@ -19,6 +16,3 @@ figures/
 figures.py
 __pycache__/
 src/cell_analysis_final_dosage.csv
-src/output/best_240/
-src/output/dosage_split/
-src/output/video_split/

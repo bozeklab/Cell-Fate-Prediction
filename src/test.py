@@ -75,13 +75,13 @@ if __name__ == "__main__":
     seed_everything(SEED)
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model_path", type=str, default="src/output/best")
+    parser.add_argument("--model_path", type=str, default="src/output/model")
     parser.add_argument(
         "--model_checkpoint",
         type=str,
-        default="src/output/best/training/checkpoints/model_checkpoint.safetensors",
+        default="src/output/model/training/checkpoints/model_checkpoint.safetensors",
     )
-    parser.add_argument("--output_dir", type=str, default="src/output/best/evaluation")
+    parser.add_argument("--output_dir", type=str, default="src/output/model/evaluation")
     parser.add_argument("--experiment_name", type=str, default="overall")
     parser.add_argument("--truncation", type=int, default=0)
     parser.add_argument("--use_truncation", action="store_true")

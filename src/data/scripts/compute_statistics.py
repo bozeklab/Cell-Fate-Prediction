@@ -52,9 +52,6 @@ def read_cell_analysis(file_path, left_padding=True):
 
 def read_analysis_results(file_path):
     file = pd.read_csv(file_path, delimiter=";", header=0)
-    # file["attention_weights"] = file["attention_weights"].apply(
-    #     lambda x: ast.literal_eval(x) if pd.notna(x) else np.nan
-    # )
     file["attention_weights"] = file["attention_weights"].apply(
         lambda x: save_literal_eval(x)
     )
@@ -66,15 +63,6 @@ def read_analysis_results(file_path):
             file["time_step"] = file["time_step"].apply(lambda x: x[0])
 
     return file
-
-
-# def read_analysis_results(file_path):
-#     file = pd.read_csv(file_path, delimiter=";", header=0)
-#     file["attention_weights"] = file["attention_weights"].apply(
-#         lambda x: ast.literal_eval(x)
-#     )
-
-#     return file
 
 
 def get_ind_above_quantile(data, p=0.9):
@@ -433,7 +421,9 @@ def permutation_test_within_sequence(
 
     results["Dosage"] = results["Dosage"].map(reverse_map)
 
-    results.to_csv(os.path.join(OUTPUT_DIR, f"{state}_{feature_name}.csv"), sep=";", index=False)
+    results.to_csv(
+        os.path.join(OUTPUT_DIR, f"{state}_{feature_name}.csv"), sep=";", index=False
+    )
 
     return (0, 0)
 
@@ -496,14 +486,14 @@ def all_in_all_per_sequence(
 
 if __name__ == "__main__":
     QUANTILE = 0.90
-    MODEL = "best"
+    MODEL = "model"
     LEFT_PADDING = True
     ONLY_CORRECT_PREDICTIONS = True
     MIN_SEQ_LENGTH = 50
     ATTENTION_SUB = np.nan
 
     # folder creation
-    model_postfix = MODEL if MODEL == "best" else "rerun"
+    model_postfix = MODEL if MODEL == "model" else "rerun"
     quantile_postfix = str(int(QUANTILE * 100))
     seq_length_postifx = f"_min_seq_{MIN_SEQ_LENGTH}" if MIN_SEQ_LENGTH else ""
     correct_postfix = "_correct" if ONLY_CORRECT_PREDICTIONS else ""

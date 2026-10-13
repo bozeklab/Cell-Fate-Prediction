@@ -122,14 +122,14 @@ if __name__ == "__main__":
     parser.add_argument(
         "--model_path",
         type=str,
-        default="src/output/best",
+        default="src/output/model",
         help="Path to the model directory containing configs and checkpoints.",
     )
 
     parser.add_argument(
         "--model_checkpoint",
         type=str,
-        default="src/output/best/training/checkpoints/model_checkpoint.safetensors",
+        default="src/output/model/training/checkpoints/model_checkpoint.safetensors",
         help="Path to the model checkpoint file.",
     )
 
